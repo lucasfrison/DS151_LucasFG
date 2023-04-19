@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Text, View, TextInput, Button, StyleSheet, FlatList } from "react-native";
+import { globalStyles } from "../../styles/main";
 
 export default function Todo() {
 
@@ -31,7 +32,7 @@ export default function Todo() {
     return (
       <View style={styles.main}>
         <Text style={styles.title}>Gerenciar Tarefas</Text>
-        <TextInput style={styles.input}
+        <TextInput style={globalStyles.textInput}
           placeholder="Adicione uma nova tarefa"
           value={newTask}
           onChangeText={(text) => setNewTask(text)}

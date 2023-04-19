@@ -13,6 +13,11 @@ export const ROUTES = [
         id: '3',
         title: 'Galeria',
         navigateTo: 'Galeria'
+    },
+    {
+        id: '4',
+        title: 'Filmes',
+        navigateTo: 'Filmes'
     }
 ];
 

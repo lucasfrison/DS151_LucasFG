@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Text, TextInput, View, Button } from "react-native";
+import { Text, TextInput, View, Button, StyleSheet } from "react-native";
+import { globalStyles } from "../../styles/main";
 
 export default function GradeForm() {
 
@@ -20,14 +21,14 @@ export default function GradeForm() {
     }
 
     return (
-        <View>
+        <View style={globalStyles.centerView}>
             <Text>Nota 1</Text>
-            <TextInput onChangeText={n1 => 
+            <TextInput style={ globalStyles.textInput } onChangeText={n1 => 
                 setPrimeiraNota(n1)} placeholder="Ex.: 70" 
                 keyboardType="numeric"
                 value={primeiraNota}/>
             <Text>Nota 2</Text>
-            <TextInput placeholder="Ex.: 70"
+            <TextInput style={ globalStyles.textInput } placeholder="Ex.: 70"
                 keyboardType="numeric"
                 onChangeText={n2 =>
                 setSegundaNota(n2)}
